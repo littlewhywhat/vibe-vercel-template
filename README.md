@@ -1,6 +1,6 @@
 # Next.js Vercel CI Template
 
-Minimal Next.js (App Router, TypeScript, Radix UI) starter with preview and production deployments on Vercel.
+Minimal Next.js 15 (App Router, TypeScript, Radix UI) starter with preview and production deployments on Vercel.
 
 ## Prerequisites
 
