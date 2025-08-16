@@ -1,18 +1,18 @@
 # Next.js Vercel CI Template
 
-Minimal Next.js (App Router, TypeScript, Tailwind) starter with preview and production deployments on Vercel.
+Minimal Next.js (App Router, TypeScript, Radix UI) starter with preview and production deployments on Vercel.
 
 ## Prerequisites
 
 - Node 20
-- pnpm
+- npm
 
 ## Development
 
 ```bash
 cp .env.example .env.local
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 Home page shows an environment badge and links to the health check at `/api/health`.
@@ -42,11 +42,11 @@ Optionally set `NEXT_PUBLIC_ENV` for custom environment labels.
 To link locally without secrets run:
 
 ```bash
-pnpm dlx vercel link
+npx vercel link
 ```
 
 ## Troubleshooting
 
 - Ensure all secrets are set in **Repository Settings → Secrets and variables → Actions**.
 - Verify organization and project IDs via the Vercel CLI.
-- Run `pnpm ci` locally to replicate the CI build.
+- Run `npm run ci` locally to replicate the CI build.
