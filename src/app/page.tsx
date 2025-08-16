@@ -7,6 +7,7 @@ export default function Home() {
     <Flex direction="column" minHeight="100vh" align="center" justify="center" gap="4" p="6">
       <Hello />
       <Link href="/api/health">API Health</Link>
+      <Link href="/agent">Ask the Agent</Link>
       <Badge>ENV: {env}</Badge>
     </Flex>
   );

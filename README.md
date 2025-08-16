@@ -17,6 +17,15 @@ npm run dev
 
 Home page shows an environment badge and links to the health check at `/api/health`.
 
+## Environment Variables
+
+Set the following variables in `.env.local`:
+
+- `OPENAI_API_KEY` – OpenAI API token
+- `GOOGLE_API_KEY` – Google Custom Search API key
+- `GOOGLE_CSE_ID` – Google Custom Search Engine identifier
+- `NEXT_PUBLIC_ENV` – optional label shown on the home page
+
 ## CI/CD
 
 GitHub Actions deploys automatically:
