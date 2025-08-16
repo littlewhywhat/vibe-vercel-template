@@ -37,12 +37,12 @@ jobs:
             const marker = '<!-- vercel-preview-link -->';
             const url = process.env.PREVIEW_URL;
             const body = `${marker}
-✅ Preview deployed:
-**${url}**
+            ✅ Preview deployed:
+            **${url}**
 
-Health: \`${url}/api/health\`
+            Health: \`${url}/api/health\`
 
-Commit: \`${context.sha}\``;
+            Commit: \`${context.sha}\``;
             const { data: comments } = await github.rest.issues.listComments({
               ...context.repo,
               issue_number: context.issue.number,

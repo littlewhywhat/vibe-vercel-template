@@ -29,4 +29,5 @@ jobs:
           URL=$(pnpm dlx vercel deploy --prebuilt --prod --token ${{ secrets.VERCEL_TOKEN }})
           echo "production_url=$URL" >> $GITHUB_OUTPUT
       - name: Deployment summary
-        run: echo "Production URL: ${{ steps.deploy.outputs.production_url }}" >> $GITHUB_STEP_SUMMARY
+        run: |
+          echo "Production URL: ${{ steps.deploy.outputs.production_url }}" >> $GITHUB_STEP_SUMMARY
