@@ -1,17 +1,13 @@
 import Hello from '@/components/Hello';
+import { Badge, Flex, Link } from '@radix-ui/themes';
 
 export default function Home() {
   const env = process.env.NEXT_PUBLIC_ENV ?? 'preview';
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-4 p-8 text-center">
+    <Flex direction="column" minHeight="100vh" align="center" justify="center" gap="4" p="6">
       <Hello />
-      <a
-        href="/api/health"
-        className="text-blue-600 underline hover:text-blue-800"
-      >
-        API Health
-      </a>
-      <span className="rounded bg-gray-200 px-2 py-1 text-sm">ENV: {env}</span>
-    </main>
+      <Link href="/api/health">API Health</Link>
+      <Badge>ENV: {env}</Badge>
+    </Flex>
   );
 }
